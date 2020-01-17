@@ -28,7 +28,7 @@ function getInfo() {
 
     for(i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
-            alert(username + " is logged in")
+            alert("You are logged in")
             console.log(username + " is logged in")
             
             return
