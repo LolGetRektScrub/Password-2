@@ -29,14 +29,17 @@ function getInfo() {
     for(i = 0; i < objPeople.length; i++) {
         if(username == objPeople[i].username && password == objPeople[i].password) {
             console.log(username + " is logged in")
+            alert(username + " is logged in")
             return
         }
         if(username == objPeople2 && password == objPeople3) {
             console.log(username + " is logged in")
+            alert(username + " is logged in")
             return
         }
     }
     console.log("Incorrect username or password")
+    alert("Username or Password is incorrect")
 }
 
 function RegisterUser() {
@@ -68,6 +71,7 @@ function RegisterUser() {
           localStorage.setItem("NEW", JSON.stringify(objPeople2));
           localStorage.setItem("NEW2", JSON.stringify(objPeople3));
           console.log(objPeople2)
+          alert(objPeople2 + " is registered")
           return
     }
 }
